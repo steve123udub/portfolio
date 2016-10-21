@@ -1,4 +1,4 @@
-/*Week 3 assignment  */
+/*Week 3 assignment use CSS styles  don't worry about esthetics */
 
 
 /*Here is a style by element type; note use of pseudo-class. It defines a style based on a state of an element*/
@@ -46,6 +46,19 @@ body {
   background-position: right;
 }
 
+/*Here is demo of box model*/
+
+.box-model-test {
+  width: 300px;
+  padding: 25px;
+  border: 25px solid green;
+  margin: 25px;
+  outline-style: dotted;
+}
+.color1 {
+  background-color: dodgerblue;
+}
+
 /*Here is a fade.  Got code from https://bavotasan.com/2011/a-simple-fade-with-css3/*/
 
 .fade {
@@ -56,6 +69,120 @@ body {
 }
 .fade:hover {
   opacity: 0.5;
+}
+
+/*Here is attempt at columns.  Source is http://www.w3schools.com/css/tryit.asp?filename=trycss3_column-rule-style */
+
+.newspaper {
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 3;
+  /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid;
+  /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid;
+  /* Firefox */
+  column-rule-style: solid;
+}
+
+/*Here is attempt at animation  based on http://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3 */
+
+.my-animate {
+  position: relative;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Standard syntax */
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/*END OF animation attempt*/
+
+
+/*Here is shadow   from http://www.w3schools.com/css/css3_shadows.asp*/
+
+.shadow-me {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/*Here is highlighting of hovered list items.  from http://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
+
+li a:hover {
+  background-color: red;
+}
+
+/*Here is highlighting of hovered nav anchor*/
+
+nav a:hover {
+  background-color: limegreen;
 }
 
 /*Quotes from https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
