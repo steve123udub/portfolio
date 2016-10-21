@@ -1,0 +1,64 @@
+/*Week 3 assignment  */
+
+
+/*Here is a style by element type; note use of pseudo-class. It defines a style based on a state of an element*/
+
+p:hover {
+  background-color: chocolate;
+  border-width: thick;
+  border: 10px solid black;
+}
+
+/*Here is a style by element type */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: purple;
+  background-color: #d8da3d
+}
+
+/*Here is a use of CSS class*/
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+/*Here is use of rem - causes the browser to resize into pixels, based on font size of the root element of the page (html element)*/
+
+.smaller {
+  font-size: .5rem;
+}
+.larger {
+  font-size: 1.5rem;
+}
+.stupid-larger {
+  font-size: 10.5rem;
+}
+
+/*Here is a use of CSS class to create round border*/
+
+.rcorners1 {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  background-position: right;
+}
+
+/*Here is a fade.  Got code from https://bavotasan.com/2011/a-simple-fade-with-css3/*/
+
+.fade {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.fade:hover {
+  opacity: 0.5;
+}
+
+/*Quotes from https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+ For this reason the primary purpose of using rem units should be to ensure that whatever default font size a user has their browser set to, the layout will adjust to accommodate the size of text within it.
+ For this reason, the primary purpose of em units should be to allow for scalability within the context of a specific design element
+ For this reason, I recommend only using em units if you identify a clear need for them.*/
