@@ -3,22 +3,13 @@
 
 /*Update week 5 use positioning */
 
-#container {
-  width: 900px;
-  margin: 0 auto;
-}
-#content {
-  position: relative;
-  padding: 20px 250px 150px 20px;
-  background: #fff;
-}
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  margin-top: -150px;
+  background: red;
 }
 
 /*Here is a style by element type; note use of pseudo-class. It defines a style based on a state of an element*/
@@ -29,10 +20,11 @@ p:hover {
   border: 10px solid black;
 }
 
-/*Here is a style by element type */
+/*Google font */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Coiny', cursive;
+  font-size: 22px;
   color: purple;
   background-color: #d8da3d
 }
