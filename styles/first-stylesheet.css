@@ -120,13 +120,13 @@ body {
 @-webkit-keyframes example {
   0% {
     background-color: red;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
   25% {
     background-color: yellow;
     left: 200px;
-    top: 0px;
+    top: 0;
   }
   50% {
     background-color: blue;
@@ -135,13 +135,13 @@ body {
   }
   75% {
     background-color: green;
-    left: 0px;
+    left: 0;
     top: 200px;
   }
   100% {
     background-color: red;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -150,13 +150,13 @@ body {
 @keyframes example {
   0% {
     background-color: red;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
   25% {
     background-color: yellow;
     left: 200px;
-    top: 0px;
+    top: 0;
   }
   50% {
     background-color: blue;
@@ -165,13 +165,13 @@ body {
   }
   75% {
     background-color: green;
-    left: 0px;
+    left: 0;
     top: 200px;
   }
   100% {
     background-color: red;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
 }
 
